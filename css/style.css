@@ -13,10 +13,27 @@ body {
 /* create a css template for the header */
 header {
     background-color: rgb(29, 12, 12);
-    color: #fff;
+    color: rgb(63, 63, 63);
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
+    padding: 0px;
+    /* change the font to lucida console */
+    font-family: "Lucida Console", Monaco, monospace;
+   
+    /* make the header stay at the top of the page */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*put the header on top of the body*/
+    /*set the size of the header*/
+    height: 100px;
+    /* center the text */
+    line-height: 50px;
+    text-align: center;
+
+
+
+
 }
 
 /* create a css template for the content */
@@ -27,39 +44,83 @@ header {
 
 /* create a css template for the footer */
 
-#footer {
+footer {
     background-color: rgb(136, 133, 133);
     color: #fff;
     font-size: 12px;
     padding: 10px;
+    text-align: center;
+    /* change the font to lucida console */
+    font-family: "Lucida Console", Monaco, monospace;
+    /* put the footer at the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+
 }
 
-/* create a css template for the navigation */
+/* create a css template for the navigation that is a list*/
 
-#nav {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    font-size: 12px;
-    padding: 10px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* change the font to lucida console */
+    font-family: "Lucida Console", Monaco, monospace;
+    /* poostion the list to the left */
+    float: left;
+    /* have the list stretch to the bottom of the page */
+    height: 100%;
+    /* change the background color */
+    background: rgb(85, 75, 75);
+
+    /* set the font size */
+    font-size: 18px;
+    /* set the font weight */
+    font-weight: lighter;
+    /* set the text color */
+    color: rgb(63, 63, 63);
+    /* set the text to be centered */
+    text-align: center;
+    /* set the width of the list */
+    width: 20%;
+    /*have the background stretch to the bottom of the page */
+    position: fixed;
+    /* put the list at the bottom of the header */
+    top: 100px;
+
+    
+
+
+
+    
 }
+
+    
+    
+
+
 
 /* create a css template for the navigation links */
 
-#nav a {
+nav a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+
+
 }
 
 /* create a css template for the navigation links when the mouse is over them */
 
-#nav a:hover {
+nav a:hover {
     color: rgb(116, 116, 116);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* create a css template for the navigation links when they are active */
 
-#nav a.active {
+nav a.active {
     color: rgb(5, 5, 5);
     text-decoration: underline;
 }
@@ -73,6 +134,61 @@ header {
     font-size: 12px;
     padding: 5px;
 }
+
+/* create a css template for the main content */
+
+main {
+    float: left;
+    width: 70%;
+    /* change the font to lucida console */
+    font-family: "Lucida Console", Monaco, monospace;
+    /*center the text*/
+    text-align: center;
+    /* change the font size */
+    font-size: 18px;
+    /* set the top of the div to the bottom of the header */
+    top: 100px;
+
+    /* center the text considering the nav */
+    margin-left: 20%;
+    /* set the height of the div */
+    height: 100%;
+    /* set the width of the div */
+    width: 100%;
+    /* set the text to the middle of the div */
+    line-height: 50px;
+    /* center the text */
+    /* center the text according to header */
+
+
+    
+    /* set the height of the div */
+    position: fixed;
+
+    /* set the background color */
+    background-color: rgb(173, 173, 173);
+    /* make the div end at the top of the footer */
+    bottom: 100px;
+
+
+
+
+
+
+
+
+}
+
+/* make the website scrollable */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    /* make the website scroll when the mouse is over the main div */
+    
+
+}
+
+
 
 
 /* Language: html */
